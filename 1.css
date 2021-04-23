@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 350PX;
+    justify-content: center;
+    align-items: center;
+    color: yellowgreen;
+}
+#home p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url("img/bgim.jpg") no-repeat center center/cover;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#button{
+    background-color: rgb(130, 234, 238);
+    color: black;
+    padding: 6px 20px;
+    margin: 15px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    cursor:pointer;
+}
+button:hover{
+    background-color: rgb(245, 133, 226);
+    color: rgb(6, 1, 14);
+}
+#container{
+    display: flex;
+    margin: 28px;
+    padding: 10px;
+}
+#container .box{
+    border: 4px white;
+    border-radius: 20px;
+    background: rgb(82 83 123);
+    color: yellowgreen;
+    display:inline
+    align-items: center;
+    margin: 2px 50px;
+    padding: 15px;
+    text-align:center ;
+}
